@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KAMIL STUDIO</title>
+
+  <!-- Google Fonts: Cormorant Garamond (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== AUDIO PLAYER ===================== -->
+  <!-- Ganti src dengan file musik kamu sendiri, format MP3 -->
+  <audio id="bg-audio" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Audio Control Button -->
+  <button class="audio-btn" id="audio-btn" title="Toggle Music">
+    <span class="audio-icon" id="audio-icon">♪</span>
+    <span class="audio-label">MUSIC</span>
+  </button>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <a href="#home">K<span class="gold">S</span></a>
+    </div>
+
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+
+    <!-- Background overlay layers -->
+    <div class="hero-bg">
+      <!-- Unsplash placeholder: dark city / luxury aesthetic -->
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80"
+        alt="Hero Background"
+        class="hero-img"
+        id="hero-img"
+      />
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <p class="hero-pre fade-up">— Welcome to my world —</p>
+      <h1 class="hero-title fade-up">
+        KAMIL<br /><em>STUDIO</em>
+      </h1>
+      <p class="hero-sub fade-up">
+        Crafting stories through visuals, ideas, and ambition.
+      </p>
+      <div class="hero-cta fade-up">
+        <a href="#gallery" class="btn-gold">Explore Work</a>
+        <a href="#about" class="btn-outline">About Me</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+      <p>Scroll</p>
+    </div>
+
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about section-pad" id="about">
+    <div class="container">
+
+      <div class="about-grid">
+
+        <!-- About Image -->
+        <div class="about-img-wrap fade-left">
+          <div class="about-img-frame">
+            <!-- Ganti URL ini dengan foto kamu sendiri -->
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+              alt="Fauzan Kamil"
+              class="about-img"
+            />
+            <div class="about-img-border"></div>
+          </div>
+          <!-- Decorative label -->
+          <div class="about-badge">
+            <span class="badge-year">2025</span>
+            <span class="badge-text">UNISBA</span>
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="about-text fade-right">
+          <p class="section-label">Who I Am</p>
+          <h2 class="section-title">Fauzan<br /><em>Kamil</em></h2>
+
+          <p class="about-desc">
+            Seorang mahasiswa dengan visi kreatif yang tajam dan semangat
+            yang tidak pernah padam. Saya percaya bahwa setiap karya adalah
+            cerminan dari jiwa penciptanya.
+          </p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">Universitas</span>
+              <span class="detail-value">Universitas Islam Bandung (UNISBA)</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Angkatan</span>
+              <span class="detail-value">2025</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Fakultas</span>
+              <span class="detail-value">Ekonomi dan Bisnis</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Program Studi</span>
+              <span class="detail-value">Ekonomi Pembangunan</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn-gold">Get in Touch</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY SECTION ===================== -->
+  <section class="gallery section-pad" id="gallery">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-sub">
+          A curated selection of moments, visions, and creations.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+
+        <!-- Item 1 – Foto besar -->
+        <div class="gallery-item large fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80"
+            alt="Work 1"
+          />
+          <div class="gallery-overlay">
+            <p class="gallery-caption">Creative Vision</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
+            alt="Work 2"
+          />
+          <div class="gallery-overlay">
+            <p class="gallery-caption">Strategy</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="gallery-item fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
+            alt="Work 3"
+          />
+          <div class="gallery-overlay">
+            <p class="gallery-caption">Design</p>
+          </div>
+        </div>
+
+        <!-- Item 4 – Video embed -->
+        <div class="gallery-item video-item fade-up">
+          <div class="video-wrapper">
+            <!-- Ganti dengan video ID YouTube kamu sendiri -->
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+              title="KAMIL STUDIO Video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="gallery-overlay video-label">
+            <p class="gallery-caption">▶ Featured Video</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"
+            alt="Work 5"
+          />
+          <div class="gallery-overlay">
+            <p class="gallery-caption">Branding</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="gallery-item fade-up">
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=80"
+            alt="Work 6"
+          />
+          <div class="gallery-overlay">
+            <p class="gallery-caption">Innovation</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section class="contact section-pad" id="contact">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-sub">
+          Punya ide, kolaborasi, atau sekadar ingin menyapa? Jangan ragu.
+        </p>
+      </div>
+
+      <div class="contact-cards">
+
+        <!-- Email Card -->
+        <a
+          href="mailto:fauzan.kamil@gmail.com"
+          class="contact-card fade-up"
+          target="_blank"
+          rel="noopener"
+        >
+          <!-- Ganti email di href dan teks di bawah sesuai email kamu -->
+          <div class="contact-icon">✉</div>
+          <p class="contact-type">Email</p>
+          <p class="contact-value">fauzan.kamil@gmail.com</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <!-- Instagram Card -->
+        <a
+          href="https://instagram.com/fauzan.kamil"
+          class="contact-card fade-up"
+          target="_blank"
+          rel="noopener"
+        >
+          <!-- Ganti username Instagram di href dan teks di bawah sesuai Instagram kamu -->
+          <div class="contact-icon">◈</div>
+          <p class="contact-type">Instagram</p>
+          <p class="contact-value">@fauzan.kamil</p>
+          <span class="contact-arrow">→</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">KAMIL <span class="gold">STUDIO</span></p>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> KAMIL STUDIO. All rights reserved.
+      </p>
+      <p class="footer-tagline">Crafted with passion.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
